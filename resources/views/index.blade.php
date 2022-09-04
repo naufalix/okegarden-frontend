@@ -20,6 +20,7 @@
 	<script src="assets/vendors/jquery/jquery-1.10.2.js"></script>
 	<script src="assets/vendors/bootstrap/bootstrap.bundle.min.js"></script>
 	<script src="assets/vendors/mobiscroll/js/mobiscroll.jquery.min.js"></script>
+	<script src="assets/vendors/sweetalert2/sweetalert2.all.min.js"></script>
 	<script src="assets/js/script.js"></script>
 </body>
 

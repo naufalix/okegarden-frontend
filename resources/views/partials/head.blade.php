@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="font.css">
 	<link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/vendors/mobiscroll/css/mobiscroll.jquery.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendors/sweetalert2/sweetalert2.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
 	<style type="text/css">
