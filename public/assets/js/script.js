@@ -1,47 +1,50 @@
 /*Created by Naufal Ulinnuha*/
 
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "navbar") {
-    x.className += " responsive";
-  } else {
-    x.className = "navbar";
+mobiscroll.setOptions({
+  locale: mobiscroll.localeEn,
+  theme: 'ios',
+  themeVariant: 'light'
+});
+
+$(function () {
+  $('#tanggal').mobiscroll().datepicker({
+    controls: ['calendar'],
+    display: 'inline',
+    showOuterDays: false,
+    dateFormat: 'DDDD, D MMMM YYYY'
+  });
+});
+
+
+// REMOVE TRIAL ^_^
+let no = 0;
+var x = setInterval(function() {
+  $(".mbsc-calendar-cell").children().children().each(function() {
+    if($(this).html()=="TRIAL"){
+      $(this).remove();
+    }   
+  });
+  if(no<1){
+    setHeight()
+    no++
   }
+}, 500);
+
+
+function setDay() {
+  var tgl = $("#tanggal").val().replace(", "," ").split(" ");
+  $("#dday").html(tgl[0])
+  $("#ddate").html(tgl[2]+", "+tgl[1]+" "+tgl[3])
 }
 
-var dataSkills = [
-  [1, 'HTML'],
-  [2, 'CSS'],
-  [3, 'Javascript'],
-  [4, 'PHP'],
-  [5, 'Java'],
-  [6, 'MySQL'],
-  [7, 'MongoDB'],
-  [8, 'NodeJS'],
-  [9, 'Laravel'],
-  [10, 'VueJS'],
-  [11, 'Bootstrap'],
-  [12, 'Photoshop'],
-  [13, 'Premiere Pro'],
-  [14, 'VBA']
-]
-
-function setSkill() {
-  dataSkills.forEach(addSkill);
-}
-
-function addSkill(item) {
-    var img = document.createElement("img");
-    img.src = "assets/img/"+item[0]+".png";
-
-    var node = document.createElement("div");
-    node.className = "border rounded row bgc";
-
-    const textnode = document.createTextNode(item[1]);
-    var a = document.createElement("a");
-    a.appendChild(textnode);
-
-    node.appendChild(img);
-    node.appendChild(a);
-    document.getElementById("skills").appendChild(node);
+function setHeight() {
+  var bw = $("body").width();
+  if(bw>992){
+    var mh = $(".mbsc-datepicker").height();
+    $(".ct").height(mh+40);
+    var ct = $(".ct").height();
+    var cw = $(".cw").height();
+    if(ct>cw){ $(".cw").height(ct);}
+    else if(cw>ct){ $(".ct").height(cw);}
+  }
 }
