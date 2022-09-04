@@ -41,11 +41,17 @@
     // REMOVE TRIAL ^_^
     var x = setInterval(function() {
 	    $(".mbsc-calendar-cell").children().children().each(function() {
-			  if($(this).html()=="TRIAL"){
-			  	$(this).remove();
-			  }  	
-			});
-	  }, 500);
+		  	if($(this).html()=="TRIAL"){
+		  		$(this).remove();
+		  	}  	
+		});
+	}, 500);
+
+	function setDay() {
+		var tgl = $("#tanggal").val().replace(", "," ").split(" ");
+		$("#dday").html(tgl[0])
+		$("#ddate").html(tgl[2]+", "+tgl[1]+" "+tgl[3])
+	}
 	    
 		 
 </script>

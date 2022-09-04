@@ -9,7 +9,7 @@
 				<div class="col-md-5">
 					<div class="card border-3 p-3 my-3 br-3" style="min-height: 478px;">
 					  <div class="card-body p-0">
-					    <input id="tanggal" class="form-control border-0" type="hidden" name="tanggal">
+					    <input id="tanggal" class="form-control border-0" onchange="setDay()" type="hidden" name="tanggal">
 					  </div>
 					  <style type="text/css">
 					  	.mbsc-calendar-cell-inner {
@@ -50,8 +50,8 @@
 					<div class="card border-3 p-3 my-3 br-3">
 					  <div class="card-body">
 					  	<div class="text-center mb-5">
-					  		<h5 class="card-title">Thursday</h5>
-					    	<p class="card-text">October, 8 2022</p>
+					  		<h5 id="dday" class="card-title">Thursday</h5>
+					    	<p id="ddate" class="card-text">October, 8 2022</p>
 					  	</div>
 					    <h5 class="card-title">Pilih Waktu</h5>
 					    <p class="card-text">Durasi Konsultasi 30 Menit</p>
