@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="font.css">
 	<link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap/bootstrap.min.css">
-	
+	<link rel="stylesheet" type="text/css" href="assets/vendors/mobiscroll/css/mobiscroll.jquery.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<style type="text/css">
 		.br-1 {border-radius: 4px;}

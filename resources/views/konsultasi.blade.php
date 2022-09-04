@@ -6,14 +6,47 @@
 		</div>
 		<form class="py-5">
 			<div class="row">
-				<div class="col-md-6">
-					<div class="card border-3 p-3 my-3 br-3">
-					  <div class="card-body">
-					    <input type="" name="">
+				<div class="col-md-5">
+					<div class="card border-3 p-3 my-3 br-3" style="min-height: 478px;">
+					  <div class="card-body p-0">
+					    <input id="tanggal" class="form-control border-0" type="hidden" name="tanggal">
 					  </div>
+					  <style type="text/css">
+					  	.mbsc-calendar-cell-inner {
+					  		color: #4D4D4D;
+					  		font-size: 18px;
+    						font-weight: 600;
+					  	}
+					  	.mbsc-calendar-week-day {
+					  		font-size: 18px !important;
+    						font-weight: 600;
+					  	}
+					  	.mbsc-ios.mbsc-calendar-day-text {
+    						padding: 8px !important;
+					  	}
+					  	.mbsc-ios.mbsc-calendar-today, .mbsc-ios.mbsc-calendar-week-nr {
+    						color: #1B6A19;
+							}
+							.mbsc-ios.mbsc-selected .mbsc-calendar-cell-text {
+						    border-color: #1B6A19;
+						    background: #1B6A19;
+						    color: #fff;
+							}
+							.mbsc-calendar-cell-text:hover {
+					  		background-color: #1B6A1920 !important;
+					  	}
+					  	.mbsc-ios.mbsc-calendar-button.mbsc-button {
+						    color: black;
+						    font-weight: 600;
+						    font-size: 20px !important;
+							}
+							.mbsc-ios.mbsc-calendar-controls {
+							  margin-bottom: 40px !important;
+							}
+					  </style>
 					</div>
 				</div>
-				<div class="col-md-6">
+				<div class="col-md-7">
 					<div class="card border-3 p-3 my-3 br-3">
 					  <div class="card-body">
 					  	<div class="text-center mb-5">
