@@ -54,11 +54,13 @@
 					    		<label class="fw-bold text-dark fs-18 mb-1">Alamat</label>
 					    		<div class="row m-0 p-3 br-2 frame">
 					    			<textarea id="alamat" class="col-12 border-0" name="alamat" rows="4">Jl. serangkai 1 Perum. Bumi Jaya blok A No. 12 Kelurahan samping, Kecamatan Baru, Kota Tanjungpinang, Kepulauan Riau 29125, Indonesia</textarea>
-					    			<a class="text-primary ms-auto">
+					    			<a class="text-primary ms-auto" onclick="addAlamat()">
 					    				Tambah Alamat Baru
 					    			</a>
 					    		</div>
 					    	</div>
+					    	<div id="list-alamat" class="mt-3">
+				    		</div>
 					    </div>
 					  </div>
 					  <hr style="height:2px;">
@@ -139,7 +141,7 @@
 									@endphp
 									@foreach ($ukuran as $uk)
 				    			<span class="my-2 me-3 me-md-4">
-								    <input type="radio" name="lahan" value="{{ $uk['size'] }}" id="u{{ $uk['id'] }}" />
+								    <input type="radio" name="ukuran" value="{{ $uk['size'] }}" id="u{{ $uk['id'] }}" />
 								    <label for="u{{ $uk['id'] }}" class="mb-3">
 								    	<a class="btn btn-outline-primary border-2 fw-bold fs-18 py-2 px-3 br-2">
 								    		{{ $uk['size'] }}
@@ -154,7 +156,7 @@
 					  <div class="card-body p-4 p-md-5">
 						  <div class="d-flex">
 						  	<a class="btn btn-light text-primary ms-auto fs-18 py-2 px-3 br-2">Batal</a>
-								<a class="btn btn-primary ms-3 fs-18 py-2 px-3 br-2">OKE</a>
+								<a type="button" class="btn btn-primary ms-3 fs-18 py-2 px-3 br-2" data-bs-toggle="modal" data-bs-target="#submitModal" onclick="confirm()">OKE</a>
 							</div>
 						</div>
 
@@ -164,3 +166,32 @@
 		</form>
 	</div>
 </section>
+
+<!-- Modal -->
+<div class="modal fade" id="submitModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Konfirmasi data</h5>
+        <button type="button" class="close btn" data-bs-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      	<div class="row m-0">
+        	<div class="col-6"><b>Nama Lengkap :</b> 		<p id="dnl"></p></div>
+        	<div class="col-6"><b>No HP :</b>   				<p id="dnp"></p></div>
+        	<div class="col-12"><b>Alamat :</b>   			<p id="dal" class="text-justify"></p></div>
+        	<div class="col-6"><b>Tanggal :</b>   			<p id="dtg"></p></div>
+        	<div class="col-6"><b>Tema Taman :</b>  	 	<p id="dtm"></p></div>
+        	<div class="col-6"><b>Lahan Taman :</b>   	<p id="dlh"></p></div>
+        	<div class="col-6"><b>Estimasi ukuran :</b>	<p id="des"></p></div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="submit()">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>

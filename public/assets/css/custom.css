@@ -20,12 +20,16 @@
 
 #tema input[type="radio"] {display: none;}
 #tema input[type="radio"]:checked + p {display: block !important;}
-#tema .card:hover {margin-top: -20px;}
-
+#tema .card {transition: all 0.1s ease-in-out;}
 
 #ukuran input[type="radio"] {display: none;}
 #ukuran input[type="radio"]:checked + label > a {background-color: #1B6A19;color: #fff !important;}
 
+#tema .card:hover, #ukuran a:hover, #lahan a:hover {
+  margin-top: -20px; filter: drop-shadow(0px 0px 10px #00000050);
+}
+
 @media screen and (min-width: 1200px) {
   .mbsc-ios.mbsc-calendar-day-text {padding: 8px !important;}
+  .ct{height: 530px}
 }
