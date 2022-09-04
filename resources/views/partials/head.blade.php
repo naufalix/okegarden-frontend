@@ -8,6 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/vendors/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/vendors/mobiscroll/css/mobiscroll.jquery.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
 	<style type="text/css">
 		.br-1 {border-radius: 4px;}
 		.br-2 {border-radius: 8px;}

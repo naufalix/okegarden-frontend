@@ -6,48 +6,15 @@
 		</div>
 		<form class="py-5">
 			<div class="row">
-				<div class="col-md-5">
-					<div class="card border-3 p-3 my-3 br-3" style="min-height: 478px;">
+				<div class="col-lg-5">
+					<div class="card border-3 p-3 my-3 br-3 ct">
 					  <div class="card-body p-0">
 					    <input id="tanggal" class="form-control border-0" onchange="setDay()" type="hidden" name="tanggal">
 					  </div>
-					  <style type="text/css">
-					  	.mbsc-calendar-cell-inner {
-					  		color: #4D4D4D;
-					  		font-size: 18px;
-    						font-weight: 600;
-					  	}
-					  	.mbsc-calendar-week-day {
-					  		font-size: 18px !important;
-    						font-weight: 600;
-					  	}
-					  	.mbsc-ios.mbsc-calendar-day-text {
-    						padding: 8px !important;
-					  	}
-					  	.mbsc-ios.mbsc-calendar-today, .mbsc-ios.mbsc-calendar-week-nr {
-    						color: #1B6A19;
-							}
-							.mbsc-ios.mbsc-selected .mbsc-calendar-cell-text {
-						    border-color: #1B6A19;
-						    background: #1B6A19;
-						    color: #fff;
-							}
-							.mbsc-calendar-cell-text:hover {
-					  		background-color: #1B6A1920 !important;
-					  	}
-					  	.mbsc-ios.mbsc-calendar-button.mbsc-button {
-						    color: black;
-						    font-weight: 600;
-						    font-size: 20px !important;
-							}
-							.mbsc-ios.mbsc-calendar-controls {
-							  margin-bottom: 40px !important;
-							}
-					  </style>
 					</div>
 				</div>
-				<div class="col-md-7">
-					<div class="card border-3 p-3 my-3 br-3">
+				<div class="col-lg-7">
+					<div class="card border-3 p-3 my-3 br-3 cw">
 					  <div class="card-body">
 					  	<div class="text-center mb-5">
 					  		<h5 id="dday" class="card-title">Thursday</h5>
@@ -66,22 +33,13 @@
 								    </label> 
 								</div>
 						    @endfor
-								<style type="text/css">
-									#waktu input[type="radio"] {
-								    display: none;
-									}
-									#waktu input[type="radio"]:checked + label > a {
-									  background-color: #1B6A19;
-	    							color: #fff !important;
-									}
-								</style>
 							</div>
 					  </div>
 					</div>
 				</div>
 				<div class="col-md-12">
 					<div class="card border-3 mt-3 br-3">
-					  <div class="card-body col-md-10 p-4 p-md-5">
+					  <div class="card-body col-lg-10 col-md-11 p-4 p-md-5">
 					    <h2>Informasi Data Diri</h2>
 					    <div class="row pt-4 text-dark fw-bold">
 					    	<div class="col-md-6 my-2">
@@ -92,18 +50,13 @@
 					    		<label class="fs-18 mb-1">No HP</label>
 					    		<input class="form-control text-secondary br-2 border-0 p-2" type="text" name="no" value="+62 852 2324 4747" readonly>
 					    	</div>
-					    	<div class="col-md-10 my-2 alamat">
+					    	<div class="col-lg-10 my-2 alamat">
 					    		<label class="fw-bold text-dark fs-18 mb-1">Alamat</label>
 					    		<div class="row m-0 p-3 br-2 frame">
 					    			<textarea id="alamat" class="col-12 border-0" name="alamat" rows="4">Jl. serangkai 1 Perum. Bumi Jaya blok A No. 12 Kelurahan samping, Kecamatan Baru, Kota Tanjungpinang, Kepulauan Riau 29125, Indonesia</textarea>
 					    			<a class="text-primary ms-auto">
 					    				Tambah Alamat Baru
 					    			</a>
-					    			<style type="text/css">
-											#alamat:focus{outline: 0px;}
-											.alamat .frame {border: 2px solid #1B6A19;}
-											.alamat a {width: fit-content; cursor: pointer;}
-										</style>
 					    		</div>
 					    	</div>
 					    </div>
@@ -128,21 +81,12 @@
 									    </label> 
 									</span>
 							    @endfor
-									<style type="text/css">
-										#lahan input[type="radio"] {
-									    display: none;
-										}
-										#lahan input[type="radio"]:checked + label > a {
-										  background-color: #1B6A19;
-		    							color: #fff !important;
-										}
-									</style>
 								</div>
 					    </div>
 					    <div class="py-4">
 					    	<p class="fs-18 mb-1 text-dark fw-bold">Tema Taman</p>
 					    	<p>Pilih tema taman yang akan dibuat.</p>
-					    	<p class="col-md-7 text-dark br-2 p-3 jost" style="background-color: #FFF2D1;">
+					    	<p class="col-lg-7 text-dark br-2 p-3 jost" style="background-color: #FFF2D1;">
 					    		<b>Catatan : </b>Jika anda belum memiliki inspirasi tema taman maka anda bisa melewati tahapan ini, konsultan kami akan memberikan rekomendasi terbaik untuk taman anda.
 					    	</p>
 					    	<div id="tema">
@@ -155,7 +99,7 @@
 											)
 										@endphp
 										@foreach ($tema as $tm)
-					    			<div class="col-md-4">
+					    			<div class="col-lg-4 col-md-6">
 					    				<div class="card border-2 mb-3 br-3" style="border-color: #D9E6D8;">
 											  <img class="br-3" src="assets/img/tema{{ $tm['id'] }}.png" alt="Card image cap">
 											  <div class="card-body p-4">
@@ -175,14 +119,6 @@
 											</div>
 					    			</div>
 					    			@endforeach
-					    			<style type="text/css">
-											#tema input[type="radio"] {
-										    display: none;
-											}
-											#tema input[type="radio"]:checked + p {
-											  display: block !important;
-											}
-										</style>
 					    		</div>
 							    		
 					    	</div>
@@ -211,15 +147,6 @@
 								    </label> 
 									</span>    	
 				    			@endforeach
-				    			<style type="text/css">
-										#ukuran input[type="radio"] {
-									    display: none;
-										}
-										#ukuran input[type="radio"]:checked + label > a {
-										  background-color: #1B6A19;
-		    							color: #fff !important;
-										}
-									</style>		
 					    	</div>
 					    </div>
 					  </div>

@@ -1,0 +1,31 @@
+/*Created by Naufal Ulinnuha*/
+
+.mbsc-calendar-cell-inner {color: #4D4D4D; font-size: 18px; font-weight: 600;}
+.mbsc-calendar-week-day {font-size: 18px !important; font-weight: 600; }
+.mbsc-ios.mbsc-calendar-today, .mbsc-ios.mbsc-calendar-week-nr {color: #1B6A19;}
+.mbsc-ios.mbsc-selected .mbsc-calendar-cell-text {border-color: #1B6A19; background: #1B6A19; color: #fff;}
+.mbsc-calendar-cell-text:hover {background-color: #1B6A1920 !important;}
+.mbsc-ios.mbsc-calendar-button.mbsc-button {color: black; font-weight: 600; font-size: 20px !important;}
+.mbsc-ios.mbsc-calendar-controls {margin-bottom: 40px !important;}
+
+#waktu input[type="radio"] {display: none;}
+#waktu input[type="radio"]:checked + label > a {background-color: #1B6A19;color: #fff !important;}
+
+#alamat:focus{outline: 0px;}
+.alamat .frame {border: 2px solid #1B6A19;}
+.alamat a {width: fit-content; cursor: pointer;}
+
+#lahan input[type="radio"] {display: none;}
+#lahan input[type="radio"]:checked + label > a {background-color: #1B6A19;color: #fff !important;}
+
+#tema input[type="radio"] {display: none;}
+#tema input[type="radio"]:checked + p {display: block !important;}
+#tema .card:hover {margin-top: -20px;}
+
+
+#ukuran input[type="radio"] {display: none;}
+#ukuran input[type="radio"]:checked + label > a {background-color: #1B6A19;color: #fff !important;}
+
+@media screen and (min-width: 1200px) {
+  .mbsc-ios.mbsc-calendar-day-text {padding: 8px !important;}
+}
