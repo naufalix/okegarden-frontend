@@ -1,5 +1,14 @@
 /*Created by Naufal Ulinnuha*/
 
+.br-1 {border-radius: 4px;}
+.br-2 {border-radius: 8px;}
+.br-3 {border-radius: 12px;}
+.br-4 {border-radius: 16px;}
+.jost {font-family: 'Jost';}
+.lato {font-family: 'Lato';}
+.pointer {cursor: pointer;}
+.text-justify {text-align:justify!important}
+
 .mbsc-calendar-cell-inner {color: #4D4D4D; font-size: 18px; font-weight: 600;}
 .mbsc-calendar-week-day {font-size: 18px !important; font-weight: 600; }
 .mbsc-ios.mbsc-calendar-today, .mbsc-ios.mbsc-calendar-week-nr {color: #1B6A19;}
