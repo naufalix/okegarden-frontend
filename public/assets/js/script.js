@@ -79,14 +79,27 @@ function confirm(){
   $("#dnl").text($("input[name=nama]").val());
   $("#dnp").text($("input[name=no]").val());
   $("#dal").text($("#alamat").val());
-  $("#dtg").text($("#tanggal").val());
-  $("#dtm").text($("input[name=tema]").val());
-  var lh = $("input[name=lahan]").val()
+  $("#dtg").text($("#tanggal").val()+" Jam "+$("input[name=jam]:checked").val());
+  $("#dtm").text($("input[name=tema]:checked").val());
+  var lh = $("input[name=lahan]:checked").val()
   if(lh>2){lh ="Lebih dari 2";}
   $("#dlh").text(lh+" Lahan Taman");
-  $("#des").text($("input[name=ukuran]").val());
+  $("#des").text($("input[name=ukuran]:checked").val());
 }
 
 function submit(){
-  Swal.fire('Terkirim', 'Tunggu tim kami menghubungi anda', 'success')
+  if($("#dnl").text()!=""){
+    if($("#dnp").text()!=""){
+      if($("#dal").text()!=""){
+        if($("#tanggal").val()!=""&&$("input[name=jam]:checked").val()!=undefined){
+          if($("#des").text()!=""){
+            if($("input[name=lahan]:checked").val()!=undefined){
+              Swal.fire('Terkirim', 'Tunggu tim kami menghubungi anda', 'success')
+            }else{Swal.fire('Gagal', 'Harap pilih jumlah lahan', 'error')}
+          }else{Swal.fire('Gagal', 'Harap pilih estimasi ukuran taman', 'error')}
+        }else{Swal.fire('Gagal', 'Harap pilih tanggal & jam konsultasi', 'error')}
+      }else{Swal.fire('Gagal', 'Harap isi alamat anda', 'error')}
+    }else{Swal.fire('Gagal', 'Harap isi no hp anda', 'error')}
+  }else{Swal.fire('Gagal', 'Harap isi nama anda', 'error')}
+  
 }

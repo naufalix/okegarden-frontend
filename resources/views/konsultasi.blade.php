@@ -25,7 +25,7 @@
 							<div id="waktu" class="row">
 								@for ($i = 9; $i <= 16; $i++)
 						        <div class="col-6 my-2">
-								    <input type="radio" name="a" value="{{$i}}" id="w{{$i}}" />
+								    <input type="radio" name="jam" value="{{$i}}" id="w{{$i}}" />
 								    <label for="w{{$i}}" class="col-12">
 								    	<a class="col-12 btn btn-outline-primary-2 fw-bold p-2 br-2 jost">
 								    		{{ substr("0".$i,-2,2) }}.00
@@ -44,11 +44,11 @@
 					    <div class="row pt-4 text-dark fw-bold">
 					    	<div class="col-md-6 my-2">
 					    		<label class="fs-18 mb-1">Nama Lengkap</label>
-					    		<input class="form-control text-secondary br-2 border-0 p-2" type="text" name="nama" value="Yudha Wahyu" readonly>
+					    		<input class="form-control text-secondary bg-light br-2 border-0 p-2" type="text" name="nama" value="Yudha Wahyu">
 					    	</div>
 					    	<div class="col-md-6 my-2">
 					    		<label class="fs-18 mb-1">No HP</label>
-					    		<input class="form-control text-secondary br-2 border-0 p-2" type="text" name="no" value="+62 852 2324 4747" readonly>
+					    		<input class="form-control text-secondary bg-light br-2 border-0 p-2" type="text" name="no" value="+62 852 2324 4747">
 					    	</div>
 					    	<div class="col-lg-10 my-2 alamat">
 					    		<label class="fw-bold text-dark fs-18 mb-1">Alamat</label>
@@ -179,13 +179,13 @@
       </div>
       <div class="modal-body">
       	<div class="row m-0">
-        	<div class="col-6"><b>Nama Lengkap :</b> 		<p id="dnl"></p></div>
-        	<div class="col-6"><b>No HP :</b>   				<p id="dnp"></p></div>
-        	<div class="col-12"><b>Alamat :</b>   			<p id="dal" class="text-justify"></p></div>
-        	<div class="col-6"><b>Tanggal :</b>   			<p id="dtg"></p></div>
-        	<div class="col-6"><b>Tema Taman :</b>  	 	<p id="dtm"></p></div>
-        	<div class="col-6"><b>Lahan Taman :</b>   	<p id="dlh"></p></div>
-        	<div class="col-6"><b>Estimasi ukuran :</b>	<p id="des"></p></div>
+        	<div class="col-6"><b>Nama Lengkap :</b> 					<p id="dnl"></p></div>
+        	<div class="col-6"><b>No HP :</b>   							<p id="dnp"></p></div>
+        	<div class="col-12"><b>Alamat :</b>   						<p id="dal" class="text-justify"></p></div>
+        	<div class="col-12 col-lg-6"><b>Tanggal :</b>   	<p id="dtg"></p></div>
+        	<div class="col-12 col-lg-6"><b>Lahan Taman :</b> <p id="dlh"></p></div>
+        	<div class="col-6"><b>Tema Taman :</b>  	 				<p id="dtm"></p></div>
+        	<div class="col-6"><b>Estimasi ukuran :</b>				<p id="des"></p></div>
         </div>
       </div>
       <div class="modal-footer">
