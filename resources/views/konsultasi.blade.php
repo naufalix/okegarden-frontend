@@ -103,7 +103,7 @@
 										@foreach ($tema as $tm)
 					    			<div class="col-lg-4 col-md-6">
 					    				<div class="card border-2 mb-3 br-3" style="border-color: #D9E6D8;">
-											  <img class="br-3" src="assets/img/tema{{ $tm['id'] }}.png" alt="Card image cap">
+											  <img class="br-3" src="{{ asset('assets/img/tema'.$tm['id'].'.png') }}" alt="Card image cap">
 											  <div class="card-body p-4">
 											    <h4 class="card-title">{{ $tm['title'] }}</h4>
 											    <p class="card-text text-secondary jost fs-18" style="min-height: 90px">

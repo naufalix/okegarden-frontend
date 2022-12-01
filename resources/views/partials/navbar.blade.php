@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg mb-3 lato">
 	<div class="container">
 	  <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
-      <img src="assets/img/logo.png" height="32">
+      <img src="{{ asset('assets/img/logo.png') }}" height="32">
     </a>
 	  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 	    <span class="fa fa-navicon"></span>
