@@ -1,7 +1,7 @@
 <section>
 	<div class="container">
 		<div class="text-center">
-			<h1>Konsultasi Taman</h1>
+			<h1>Konsultasi Test</h1>
 			<p class="fs-20">klik dibawah ini untuk memilih tanggal & waktu yang tersedia untuk memanggil konsultan kami</p>
 		</div>
 		<form class="py-5">
